@@ -22,52 +22,33 @@ export default {
         pics: {
             type: Array,
             default () {
-                return [];
+                return [
+                "https://lh3.googleusercontent.com/dFWFuAQo1D8So9TJSEQ05kParGKHdt5xpIqEm_-Ljwh8arTltZbdvcKPyInXmeFEbDZA167VC28EYmI9UaK1GyD7exsr-ROm7Mj6wqxYvSwjV5JCOFyFBTjM6j0vSx6IEVJLuBe6ITa7aY2D9MihQCfRbUfieNTvETP43GF2OUh9SqK_jA7_xFJXE9YWM8AEk6AqkosdUbOYCFXwerPEh1ExK-O462f9Myi_0IWJ9ipwgIewcu1oVefvCy4iA3leEvdmQ6eu33WAdX48PUdGfBZuTA6f1CxgBh7cbS1SOeW8nA0dA44Y9cfuoPqaTq51TblB2SRACiFvtK2x4mF2inH37xqeJuKRsXdPHqYDyYb6EMt0BorSYLKLlBXnXTG_ky2o-YMVx0OoY9VQBOWrqBgxaxcfgpIbwPyUZUBiU6iXOLjESjkGw9Pt8MXqIA2S9xZsoe4kKqQB_qMEigh8T5Rt0glt7Z1FBvwCES6Ov6gMIcVVGvi9YyoRSjAQgq7ejyBmBazu-Jqn4oiIqPFyqdK3QBHaF-eW8FOK55KmUrY8nCOcATk9tWX8SsSnqQfityNUVDXaJktKxMC8EX5-yuZOBCWRHKdMsSkV8FejoZfUyrH5vuF14QJK7xRrz9lZOPikTN8UrVCY2iu5pJcugXKh7CYtFi0QhHDJe4rOnuG7H7iH_-Tyqcbl=w139-h185-no",
+                "https://lh3.googleusercontent.com/_T3Dp12-2T4zGpTsoqXWHUIJztfo8D7JTN4S8xnBbby46tcYkLhAiAz9YD8fujdU7y9PVj_zzLBNr7PfUkIoAHPR-_x3safdkjzMx58sGx9M3OYNVVV1iGn2DyLmOjZ8YYvcUaDF3iIaDnA6_shO5qXuUdIFjlPjKKHIAbArus-QeyZDuP23Zt20CBijQe_Gb-RECauesePwAiWfkSywfqldPN7051R5lMEImy-yHK56rd2-a-oL2KKEtcTWSACODHX-OXHMWN5XnVPDLLTSN9etuJayiBoxJr5YNbJBdmurnhlIlpgEso9Og3zHqWL4ytVUVMXV-yoVpytIfkYMwmE0Z7BftXXoDMnVVrZLBVu_qjxVNXwACMXMPRNp3X6YY6uNJxx9iUyY2dLm-hQq1RMBxH4czlhUh8JuOVXn5JAz2CWGPCeGBqitxHgoj_YNnzGUuya9I2mctPoyssoXC9Vjjj1SR4eSSo0wOyzbtGNjcp2K_Dcdm3NWxJeAzpwcDYaGYGTPPNwzpbP5TIz2fohejtnOd89whImL0fxbkgv-z0U-RuomF-U8gDnkGL2iIemznPCHLDdzbLDa1O_DUyQSYtVYaX0QJ3CS8ICaLp-XMneYZm-WzBG_71Pf72baNSt32Ri5x-sQu_brtkjANza5ZG9kNS5kJLyX9TuItXxmUqV93yfVDQb8=w289-h211-no", 
+                "https://lh3.googleusercontent.com/q0CicKi8iQzEQ8VBeKrQPKEAFZ_8CpUg6OOpNeyi7KD0HhprOD21ew9qWotf1f3ecYVkUGYqDq1nJbcDGsaZr4O3D3PHPcAP25lBEq3Dl1VoZXG2Up9MMXOTD7N-LTPbJgbwKV7trrzHc55J--_kWy2Q_UJKClNsGKnaVDamNTdiCLn7xmK90ZX1g1RPjHvhHyAAiNFE3qQqodQ7DYaSu92mGeFG2xew9NM8czbI9r5_39fL03CY76ePoTe2igLcLUKlumsoM38OodnafIcEJcL9p_ofyq1tzRhMibJD61KK5-3DAbZCbbdDohpA_A2ICjWJqyDx7uf5ZumOTrRX9o9znpPmG7GeA1tCedJrBrVL2r18omqeKRkB8881jVj30CKPRLk4xguz5HRky4tF22aTOZp5sr0V-2wJBqSKGnUxSlPhb1d9pWxGakSkdc-TtPh91AI2xIQZV47o0aiun5iGWdfbEx60Q_XwLAqx_1eBzbW3c-vEVPhyL4J6swrdQGoJVVfniEl6PMvCs2f2wS7sYmQs0GbLy_DNMtn51jM22Ll7r6zYI0BkJwrOnd_MQhVmaI8nUPGyBVuA0hHbrK2npJAYVspdsYVt98cREvSdwpX5VVHX0OAeEfA_PKbm_Q3SXEqm4eOfM4wiZeB5hyADboF0UBBjIRfDy9lWcu8Mde6dwXqd2nuE=w436-h206-no"];
             }
         }
     },
     data: function () {
         return {
-            selectedImageIndex: 0,
-            viewport: {
-                width: 0,
-                height: 0
-            }
+            selectedImageIndex: 0
         }
     },
     methods: {
-        captureViewport() {
-            this.viewport.width = screen.availWidth;
-            this.viewport.height = screen.availHeight;
-        },
-        captureDevicePixelRatio() {
-            this.devicePixelRatio = window.devicePixelRatio;
-        },
-        handleResize() {
-            this.captureViewport();
-            this.captureDevicePixelRatio();
-        },
         isImageSelected(index) {
             if(index == this.selectedImageIndex) return true;
         },
         handleGalleryScroll($event) {
-            this.selectedImageIndex = parseInt( ($event.target.scrollLeft / (this.devicePixelRatio * this.viewport.width)));
+            // this.selectedImageIndex = parseInt($event.target.scrollLeft / (this.devicePixelRatio * this.viewport.width) ) + 1;
+            this.selectedImageIndex = parseInt(($event.target.scrollLeft / $event.target.scrollWidth) * this.pics.length)
         },
-        visibilityChanged(isVisible) {
-            if(isVisible && this.viewport.width > 992) { this.$refs.imageGallery.focus({preventScroll: true}) }
-        },
+        // visibilityChanged(isVisible) {
+        //     if(isVisible && this.viewport.width > 992) { this.$refs.imageGallery.focus({preventScroll: true}) }
+        // },
         postImageScrollIntoView(url) {
             let imageDiv = this.$refs[url][0]; // Setting refs inside v-for causes each Node to be placed inside an array
             imageDiv.scrollIntoView();
         }
-    },
-    mounted() {
-        this.captureViewport();
-        this.captureDevicePixelRatio();
-        window.addEventListener("resize", this.handleResize);
-    },
-    destroyed() {
-        window.removeEventListener("resize", this.handleResize);
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "vue-insta-gallery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vue.js Plugin for an Instagram-like image gallery.",
   "main": "./dist/vue-insta-gallery.common.js",
   "scripts": {

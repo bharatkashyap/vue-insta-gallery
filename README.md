@@ -10,7 +10,7 @@ A Vue.js plugin for an Instagram-like image gallery.
 Array of image-source URLs
 
 ### Example
-![Usage example](https://imgur.com/BxQab2L)
+![Usage example](https://i.imgur.com/BxQab2L.mp4)
 
 ### Live demo
 Used across all blog posts on [Auraq](https://auraq.in)

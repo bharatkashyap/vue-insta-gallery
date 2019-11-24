@@ -1,13 +1,15 @@
 {
   "name": "vue-insta-gallery",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Vue.js Plugin for an Instagram-like image gallery.",
   "main": "./dist/vue-insta-gallery.common.js",
   "scripts": {
     "build-bundle": "vue build --target lib --name vue-insta-gallery index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": ["vue", "gallery", "instagram-gallery"],
+  "author": "Bharat Kashyap",
+  "homepage": "https://github.com/bharatkashyap/vue-insta-gallery",
   "license": "ISC",
   "files": [
     "dist/*",
